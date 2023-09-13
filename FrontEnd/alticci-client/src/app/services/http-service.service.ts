@@ -7,10 +7,12 @@ import { Injectable } from '@angular/core';
 export class HttpService {
   constructor(private http: HttpClient) {}
 
-  private url = 'http://localhost/hello/';
+  private url = 'http://localhost:8080/hello/';
 
   getResult(n: number) {
-    this.url.concat(n.toString());
-    return this.http.get<number>(this.url); //Temos que especificar que o resultado é do tipo number
+    let temp = this.url + n;
+    console.log(temp);
+    console.log(n);
+    return this.http.get<number>(temp); //Temos que especificar que o resultado é do tipo number
   }
 }

@@ -1,0 +1,5 @@
+
+ConcurrentHashMap is a thread-safe implementation of the Map interface in Java, which means multiple threads can access it
+ simultaneously without any synchronization issues. It’s part of the java.util.concurrent package and was introduced in Java 5
+  as a scalable alternative to the traditional HashMap class. One of the key features of the ConcurrentHashMap is that it provides
+   fine-grained locking, meaning that it locks only the portion of the map being modified, rather than the entire map.

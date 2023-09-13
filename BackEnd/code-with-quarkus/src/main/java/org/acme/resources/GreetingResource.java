@@ -8,6 +8,8 @@ import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import org.acme.service.AlticciService;
 
+import java.math.BigInteger;
+
 @Path("/hello")
 public class GreetingResource {
 
@@ -23,7 +25,7 @@ public class GreetingResource {
     @Produces(MediaType.TEXT_PLAIN)
     @Path("/{n}")
     public long getAlticci(@PathParam("n") int n) {
-        return alticciService.calculateAlticci(n);
+        return alticciService.calculateAlticciAlternitive(n);
     }
 
 }
