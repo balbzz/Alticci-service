@@ -1,0 +1,47 @@
+.container-alticci {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+}
+
+h1 {
+  color: #333;
+}
+
+form {
+  margin: 20px 0;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="number"] {
+  width: 100px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  padding: 5px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}

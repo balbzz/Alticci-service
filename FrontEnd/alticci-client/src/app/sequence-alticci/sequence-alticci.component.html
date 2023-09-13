@@ -1,0 +1,13 @@
+<div class="container-alticci">
+  <h1>Alticci-Sequence-Calculator</h1>
+  <form (ngSubmit)="calculate()" #myForm="ngForm">
+    <label for="index">Enter an index (n):</label>
+    <input type="number" name="index" id="index" required [(ngModel)]="n" />
+    <!-- [(ngModel)] Angular can track the value and user interaction of the control and keep the view synced with the model. -->
+    <button type="submit">Calculate</button>
+  </form>
+  <div class="result" *ngIf="result !== null">
+    <p>Alticci Sequence Value:</p>
+    <p>{{ result }}</p>
+  </div>
+</div>
