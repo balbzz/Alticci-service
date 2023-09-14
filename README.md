@@ -29,7 +29,7 @@ Antes de executar o aplicativo, certifique-se de ter os seguintes pré-requisito
 3. Excute o aplicativo:
 
     ```shell
-   java -jar target/seu-projeto-1.0-SNAPSHOT-runner.jar
+   java -jar target/code-with-quarkus-1.0.0-SNAPSHOT-runner.jar
     
 
 O aplicativo estará disponível em http://localhost:8080.
