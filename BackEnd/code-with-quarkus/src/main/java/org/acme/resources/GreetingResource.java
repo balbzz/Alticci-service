@@ -15,7 +15,7 @@ import org.eclipse.microprofile.openapi.annotations.media.Schema;
 
 
 @Path("/alticci")
-public class GreetingResource {
+public class    GreetingResource {
 
     @Inject
     AlticciService alticciService;

@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
-import static org.junit.jupiter.api.Assertions.*;
+
 
 @QuarkusTest
 class GreetingResourceTest {
@@ -13,16 +13,16 @@ class GreetingResourceTest {
     @Test
     void hello() {
         given()
-                .when().get("/hello")
+                .when().get("/alticci")
                 .then()
                 .statusCode(200)
-                .body(is("Hello RESTEasy"));
+                .body(is("Welcome to AlticciCalculator"));
     }
 
     @Test
     void getAlticci() {
         given()
-                .when().get("/hello/5")
+                .when().get("/alticci/5")
                 .then()
                 .statusCode(200)
                 .body(is("2"));
