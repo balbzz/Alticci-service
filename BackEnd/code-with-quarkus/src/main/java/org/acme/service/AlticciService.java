@@ -17,13 +17,10 @@ public class AlticciService {
 
     private final Map<Integer, Long> cache = new ConcurrentHashMap<>();
 
-
-
-
 //    @CacheResult(cacheName = "alticci-cache") //max index = 157
 //    public long calculateAlticci(int n) {
 //        if (n < 0) {
-//            throw new IllegalArgumentException("n must be a nonnegative integer.");
+//            throw new IllegalArgumentException("n must be a integer >= 0.");
 //        }
 //        if (n <= 1) {
 //            return n;
@@ -34,19 +31,15 @@ public class AlticciService {
 //        return calculateAlticci(n - 3) + calculateAlticci(n - 2);
 //    }
 
-
     public long calculateAlticciAlternitive(int n){
         if (n < 0) {
-            throw new IllegalArgumentException("n must be a nonnegative integer.");
+            throw new IllegalArgumentException("n must be a integer >= 0.");
         }
 
         long startTime = System.currentTimeMillis();
 
         // Check if the result is already in the cache
         if (cache.containsKey(n)) {
-
-
-
             return cache.get(n);
         }
 
@@ -59,10 +52,7 @@ public class AlticciService {
             result = calculateAlticciAlternitive(n - 3) + calculateAlticciAlternitive(n - 2);
         }
 
-        // Cache the result
         cache.put(n, result);
-
-
         return result;
     }
 

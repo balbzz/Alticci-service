@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class HttpService {
   constructor(private http: HttpClient) {}
 
-  private url = 'http://localhost:8080/hello/';
+  private url = 'http://localhost:8080/alticci/';
 
   getResult(n: number): Observable<any> {
     let temp = this.url + n;
