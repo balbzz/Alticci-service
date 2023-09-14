@@ -1,0 +1,32 @@
+>
+<div class="alticci-container">
+  <div class="alticci-content">
+    <h1 class="alticci-title">Find Alticci Value</h1>
+    <form class="alticci-form" (ngSubmit)="calculate()" #myForm="ngForm">
+      <mat-form-field class="alticci-form-field">
+        <input
+          class="alticci-input"
+          matInput
+          type="number"
+          id="index"
+          min="0"
+          name="index"
+          required
+          [(ngModel)]="n"
+        />
+      </mat-form-field>
+      <button
+        class="alticci-button"
+        mat-raised-button
+        color="primary"
+        type="submit"
+      >
+        Calculate
+      </button>
+    </form>
+    <div class="result" *ngIf="resultAlticci.result !== null">
+      <p class="result-label">Alticci Sequence Value:</p>
+      <p class="result-value">{{ resultAlticci.result }}</p>
+    </div>
+  </div>
+</div>
