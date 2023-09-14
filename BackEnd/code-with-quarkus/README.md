@@ -12,8 +12,8 @@ This is a Quarkus-based API that calculates the Alticci sequence. The Alticci se
 
 ## Endpoints
 
-- `GET /hello`: Returns a simple greeting message.
-- `GET /hello/{n}`: Calculates the value of the Alticci sequence for the provided index (n) and returns the result.
+- `GET /alticci`: Returns a simple greeting message.
+- `GET /alticci/{n}`: Calculates the value of the Alticci sequence for the provided index (n) and returns the result.
 
 ## Caching Method
 
